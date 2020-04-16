@@ -7,13 +7,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     padding: 1rem;
 }
 
 .navbar a{
     text-decoration: none;
     margin-right: 1rem;
-    font-size: medium;
     color: black;
 }
  
@@ -23,10 +23,67 @@ body{
 }
 
 #user-icon{
-    background: purple;
-    border-radius: 12px;
+    background: red;
+    border-radius: 13px;
     color: white;
-    width: 22px;
-    height: 22px;
+    width: 19px;
+    height: 19px;
+    padding: 3px;
     text-align: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.button-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-line__square{
+    background:#ccc;
+    border-radius: 13px;
+    width: 6px;
+    height: 6px;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+}
+
+.search-input{
+    min-width: 54vw;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 16px;
+    margin: 1rem auto;
+    padding: 8px 8px 8px 12px;
+}
+
+.buttons-container{
+    margin-top: 1rem;
+}
+
+.search-button{
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    padding: 7px 13px;
+    margin-right: 6px;
+}
+
+.search-button:hover,
+.search-button:active{
+    border-color: #ccc;
+    box-shadow: 0 0.5px #ccc;
 }
