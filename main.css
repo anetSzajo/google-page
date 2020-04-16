@@ -1,6 +1,13 @@
 body{
     height: 100vh;
     margin: unset;
+    font-family: arial,sans-serif;
+    color: grey;
+}
+
+a,
+a:visited{
+    color: grey !important;
 }
 
 .navbar{
@@ -14,7 +21,6 @@ body{
 .navbar a{
     text-decoration: none;
     margin-right: 1rem;
-    color: black;
 }
  
 .navbar a:hover,
@@ -87,3 +93,27 @@ main{
     border-color: #ccc;
     box-shadow: 0 0.5px #ccc;
 }
+
+footer{
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.links{
+    padding: 5px 2rem;
+}
+
+.links a{
+    margin-right: 4px;
+    text-decoration: none;
+    margin-right: 28px;
+    border: 1px solid #f2f2f2;
+}
+
