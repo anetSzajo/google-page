@@ -1,5 +1,6 @@
 body{
     height: 100vh;
+    margin: unset;
 }
 
 .navbar{
@@ -11,11 +12,21 @@ body{
 
 .navbar a{
     text-decoration: none;
-    margin-right: 6px;
+    margin-right: 1rem;
     font-size: medium;
+    color: black;
 }
  
 .navbar a:hover,
 .navbar a:active{
-    color: #ccc;
+    text-decoration: underline;
+}
+
+#user-icon{
+    background: purple;
+    border-radius: 12px;
+    color: white;
+    width: 22px;
+    height: 22px;
+    text-align: center;
 }
