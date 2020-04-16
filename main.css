@@ -1,4 +1,10 @@
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
 body{
+    width: 100vw;
     height: 100vh;
     margin: unset;
     font-family: arial,sans-serif;
@@ -73,11 +79,13 @@ main{
     border: 1px solid rgb(226, 224, 224);
     border-radius: 16px;
     margin: 1rem auto;
-    padding: 8px 8px 8px 12px;
+    padding: 8px 8px 8px 36px;
 }
 
 .buttons-container{
     margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .search-button{
@@ -107,13 +115,53 @@ footer{
 }
 
 .links{
-    padding: 5px 2rem;
+    padding: 5px 21px;
 }
 
 .links a{
-    margin-right: 4px;
     text-decoration: none;
-    margin-right: 28px;
+    margin-right: 5px;
     border: 1px solid #f2f2f2;
 }
 
+#settings{
+    margin-right:0;
+}
+
+.search-file{
+    position: relative;
+}
+
+.image-container{
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+    position: absolute;
+    top: 37%;
+}
+
+.image-container__microphone{
+    right: 3%;
+}
+
+.image-container__magnifier{
+    left: 3%;
+    opacity: 0.6;
+}
+
+.search-icon__magnifier,
+.search-icon__microphone{
+    width: 100%;
+}
+
+
+@media(min-width: 40rem){
+    .links{
+        padding: 5px 2rem;
+    }
+    .links a{
+        margin-right: 28px;
+    }
+    .search-input{
+        min-width: 30vw;
+}

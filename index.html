@@ -32,9 +32,14 @@
         <main>
             <img src="images/google_name.png">
             <div class="search-file">
-                <img class="search-icon loupe">
-                <input class="search-input no-outline" type="text" placeholder="Search Google or type a URL">
-                <img class="search-icon microphone">
+                <span class="image-container image-container__magnifier">
+                    <img class="search-icon__magnifier" src="images/baseline_search_black_18dp.png">
+                </span>
+                <input class="search-input" type="text" placeholder="Search Google or type a URL">
+                <span class="image-container image-container__microphone">
+                    <img class="search-icon__microphone" src="images/microphone_icon.png">
+                </span>
+               
             </div>
             <div class="buttons-container">
                 <button class="search-button">Google Search</button>
@@ -51,7 +56,7 @@
             <div class="links">
                 <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
                 <a href="https://policies.google.com/terms?fg=1">Terms</a>
-                <a>Settings</a>
+                <a id="settings">Settings</a>
             </div>
         </footer>
     </body>
